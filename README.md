@@ -49,7 +49,7 @@ conda env create -f conda.yaml
 conda activate git_re_sd_wd_gui
 ```
 ```
-pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113 scipy pytorch_lightning pysimplegui pandas
+pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113 scipy pytorch_lightning pysimplegui pandas safetensors==0.2.6
 ```
 ```
 python run_app_gui.py
