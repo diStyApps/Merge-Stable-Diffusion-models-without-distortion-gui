@@ -42,11 +42,12 @@ Dev:
 git clone https://github.com/diStyApps/Merge-Stable-Diffusion-models-without-distortion-gui
 cd Merge-Stable-Diffusion-models-without-distortion-gui
 python3.7 -m venv venv
+source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 Or just chain them:
 ```
-git clone https://github.com/diStyApps/Merge-Stable-Diffusion-models-without-distortion-gui && cd Merge-Stable-Diffusion-models-without-distortion-gui && python3.7 -m venv venv && pip install -r requirements.txt
+git clone https://github.com/diStyApps/Merge-Stable-Diffusion-models-without-distortion-gui && cd Merge-Stable-Diffusion-models-without-distortion-gui && python3.7 -m venv venv && source ./venv/bin/activate && pip install -r requirements.txt
 ```
 - Run:
 ```
