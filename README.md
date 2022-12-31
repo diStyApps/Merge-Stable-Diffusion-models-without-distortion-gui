@@ -3,10 +3,10 @@
   [![](media/svg/patreon.svg)](https://www.patreon.com/distyx)
   [![](media/svg/buymeacoffee.svg)](https://www.buymeacoffee.com/disty)
   [![](media/svg/kofi.svg)](https://ko-fi.com/disty)
-  
+
   To continue to develop i will be happy to get some support.
-  
-## Merge-Stable-Diffusion-models-without-distortion-gui  
+
+## Merge-Stable-Diffusion-models-without-distortion-gui
 </div>
 
 
@@ -36,23 +36,22 @@ If you have any questions or concerns, please don't hesitate to ask for help.
 [Windows Releases](https://github.com/diStyApps/Merge-Stable-Diffusion-models-without-distortion-gui/releases)
 
 Dev:
+- Requirements: Python 3.7, Git.
+- Setup:
 ```
 git clone https://github.com/diStyApps/Merge-Stable-Diffusion-models-without-distortion-gui
-```
-```
 cd Merge-Stable-Diffusion-models-without-distortion-gui
+python3.7 -m venv venv
+source ./venv/bin/activate
+pip install -r requirements.txt
 ```
+Or just chain them:
 ```
-conda env create -f conda.yaml
+git clone https://github.com/diStyApps/Merge-Stable-Diffusion-models-without-distortion-gui && cd Merge-Stable-Diffusion-models-without-distortion-gui && python3.7 -m venv venv && source ./venv/bin/activate && pip install -r requirements.txt
 ```
+- Run:
 ```
-conda activate git_re_sd_wd_gui
-```
-```
-pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113 scipy pytorch_lightning pysimplegui pandas
-```
-```
-python run_app_gui.py
+./run.sh
 ```
 
 # Merge-Stable-Diffusion-models-without-distortion
@@ -60,12 +59,12 @@ I wrote the permutation spec for Stable Diffusion necessary to merge with the gi
 This is based on a 3rd-party python implementation of that here - https://github.com/themrzmaster/git-re-basin-pytorch.
 
 The results of a model merge have not been tested yet but I am done with the spec.
-To merge, you will need to install pytorch 1.11.0 or lower (1.12.0 will not work). 
+To merge, you will need to install pytorch 1.11.0 or lower (1.12.0 will not work).
 
-Download the code folder, open cmd in the directory, transfer the desired models to the same folder and run 
+Download the code folder, open cmd in the directory, transfer the desired models to the same folder and run
 "python SD_rebasin_merge.py --model_a nameofmodela.ckpt --model_b nameofmodelb.ckpt"
 
-If not in the same directory then 
+If not in the same directory then
 pathofmodela.ckpt and pathofmodelb.ckpt instead
 
 CPU + GPU works now
